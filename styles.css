@@ -1,0 +1,330 @@
+
+  :root{
+    --brand-primary: #0768AC;
+    --brand-secondary: #03C180;
+    --bg_default: #FFFFFF;
+    --bg_body: #F0F9FF;
+    --lines-color: #DDDDDD;
+    --body-text: #333333;
+    --heart-color: #DC143C;
+  }
+  @media (max-width: 481px){
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      header h1 {
+        color: var(--brand-primary);
+        font-size: 20px;
+        line-height: 1.1;
+      }
+      
+      .button-container {
+        display: flex;
+        gap: 10px; /* Add some spacing between the buttons */
+        font-size: 20px;
+        line-height: 1.1;
+      }
+
+      div button{
+        display: flex;
+        font-size: 20px;
+        line-height: 1.8;
+        border: solid var(--lines-color);
+        border-radius: 12px;
+        background-color: var(--bg_default);
+        border-color: var(-);
+        border-width:1px; 
+        
+      }
+      
+      
+      
+      
+      
+      .icons{
+        padding-top: 6%;
+        
+      }
+      .tr {
+        width: 100%;
+        
+        position: relative;
+        overflow: hidden;
+    }
+    .tr:Before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      background-color: var(--brand-secondary);
+      transform-origin: 100% 100%;
+      transform: rotate(5deg);
+  }
+  .tr:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(to right, var(--brand-primary) , var(--brand-secondary) );
+    transform-origin: 0% 100%;
+    transform: rotate(355deg);
+}
+      
+      article h1{
+        color: var(--brand-secondary);
+      }
+     /* Define a class for the colored article */
+     article{
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        
+        padding-left: 20px;
+        padding-bottom: 10px;
+       /* height: 100vh;*/
+
+     }
+     section{
+      background-color: var(--bg_body);
+     }
+     .search-result{
+      margin-left: 25px;
+     }
+
+     .search-sort-filt{
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        
+        background-color: var(--bg_body);
+        
+        padding: 5%;
+     }
+     
+     .search{
+        padding-top: 10px;
+        padding-bottom: 10px;     
+        border:  var(--lines-color);
+        border-radius: 12px 12px 0px 0px;
+        font-size: 20px;        
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 90%;
+        box-shadow: 4px 0px 10px var(--lines-color), -4px 4px 8px var(--lines-color);
+
+    }
+
+     .div-cont{
+        display: flex;
+        padding-left: 20%;
+        max-width: 400px;
+        width: 100%;
+    }
+
+     /* Hide the dropdown content by default */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        
+    }
+  
+    .search-form{
+      display: flex;
+      flex-flow: row wrap
+    }
+     /* Style the button to look like a dropdown button */
+    .sort-dropbtn {
+      background-color: var(--bg_default);
+      color: var(--body-text);
+      padding-left: 16px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 20px;
+      
+      border-top:solid var(--lines-color);
+      border-right: solid var(--lines-color);
+      border-radius: 0px 0px 0px 12px;
+      border-bottom: var(--lines-color);
+      cursor: pointer;
+      box-shadow: -4px 4px 8px var(--lines-color);
+      
+      width: 100%;
+      flex: 0 0 50%;
+    }
+    .filter-dropbtn {
+      background-color: var(--bg_default);
+      color: var(--body-text);
+      padding-left: 16px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      font-size: 20px;
+      
+      border-top:solid var(--lines-color);
+      
+      border-radius: 0px 0px 12px 0px;
+      border-bottom: var(--lines-color);
+      cursor: pointer;
+      
+      box-shadow:  4px 4px 8px var(--lines-color);
+      width: 100%;
+      flex: 0 0 51%;
+  }
+  .default{
+    font-size:25px ;
+  }
+  
+  .dropdown{
+    display: flex;
+    width: 100%;
+  }
+     /* On hover, open the dropdown content */
+   /* .dropdown:hover .dropdown-content {
+        display: block;
+    }*/
+    .topic-image{
+        flex: 0 0 100%;
+        max-width: 100%;
+        border-radius: 12px 12px 0px 0px;
+     }
+     .web-topic{
+      background-color: var(--bg_default);
+      margin-left: 25px;
+      margin-right: 25px;
+      
+      border-radius: 12px;
+     }
+     .topic-header{
+      margin-left: 15px;
+     }
+     .stars-cont{
+      margin-left: 15px;
+     }
+     .checked {
+      color: orange;
+    }
+    .head{
+      margin-bottom: 50px;
+    }
+    .Author{
+      padding-bottom: 10px;
+      margin-left: 15px;
+    }
+}
+  
+
+  /* Styles for screens between 481 px an768px wide */
+  @media (min-width: 481px) and (max-width: 768px){
+    header{
+        /*display: inline;*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    header h1{
+        color: var(--brand-primary);
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    .button-container {
+        display: flex;
+        gap: 10px; /* Add some spacing between the buttons */
+        font-size: 30px;
+          line-height: 1.4;
+      }
+
+      
+      
+     /* Define a class for the colored article */
+     article{
+        display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+   /* height: 100vh;*/
+     }
+     article h1{
+        color: var(--brand-secondary);
+        font-size: 30px;
+        line-height: 1.4;
+      }
+      article p{
+        color: var(--body-text);
+        font-size: 30px;
+        line-height: 1.4;
+      }
+  }
+  
+  /* Styles for screens 768px wide and bigger */
+  @media (min-width: 768px){
+    body{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    header{
+        margin:0;
+        padding:0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-top: 0%;
+        box-sizing: border-box;
+        
+    }
+    header h1{
+        color: var(--brand-primary);
+        font-size: 40px;
+        line-height: 1.8;
+    }
+    .button-container {
+        display: flex;
+        gap: 10px; /* Add some spacing between the buttons */
+        font-size: 20px;
+        line-height: 1.8;
+      }
+      div button{
+        display: flex;
+        font-size: 20px;
+        line-height: 1.8;
+        border: solid var(--lines-color);
+        border-radius: 12px;
+        background-color: var(--bg_default);
+        border-color: var(-);
+        border-width:1px; 
+      }
+      .icons{
+        padding-top: 6%;
+        
+      }
+
+      article h1{
+        color: var(--brand-secondary);
+      }
+     /* Define a class for the colored article */
+     article{
+        display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+   /* height: 100vh;*/
+     }
+
+
+
+  }
