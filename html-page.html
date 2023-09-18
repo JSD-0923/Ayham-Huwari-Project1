@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Html-Page</title>
+    <link rel="stylesheet" type="text/css" href="html-css.css">
+    <!--to make sure the view port as the same of the device screen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--for the progress bar style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+            <h1>Web Topics</h1>
+            <div class="button-container">
+            <button class="top-button" id="changeColorButton"><ion-icon name="moon-outline" class="icons" ></ion-icon> <span class="">Dark mode</span> </button>
+            <button class="top-button"><ion-icon name="star-outline" class="icons"></ion-icon> Favorites</button>
+          </div>        
+    </header>
+    <article class="colored-article tr">
+        <h1><br>Wellcome to our Website!</h1>
+        <p>We have a free design that's fresh, modern, and easy to use.</p>
+    </article>
+
+    <section>
+        <div class="web-topic">
+            <img src="assets/images/html.png" alt="Html image" class="topic-image">
+            <div class="head2">
+              <h5 class="topic-header">HTML by sarah smith</h5>
+              <div class="fav-contain">
+                <p>Interested about this topic?</p>
+                <button class="add-to-fav">Add to Favorites<ion-icon name="heart-outline" class="heart-icons"></ion-icon></button>
+                <p class="Unlimited">Unlimited credits</p>
+              </div>
+              
+            </div>
+        </div>
+        
+
+        <div class="head">
+            <h5 class="topic-header1">Web Development Languages</h5>
+            <h3 class="topic-header2">HTML</h3>
+        </div>
+            
+            <div class="stars-cont">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+        <p class="topic-definition">HTML (Hypertext Markup Language) is the standard Markaup Language for Creating Web pages and other information that can be displayed in a web browser. it provides a structure for content and defines how it should be displayed on a web page, including text, image, and multimedia. HTML is essential for creating static web pages and is a foundamental technology for the world wide web.</p>
+
+        <table class="bordered-table">
+            <tr>
+              <th>HTML Sub Topics</th>
+            </tr>
+            <tr>
+              <td><ion-icon name="checkmark-circle-outline" class="tic"></ion-icon> HTML syntax and structure</td>
+            </tr>
+            <tr>
+              <td><ion-icon name="checkmark-circle-outline" class="tic"></ion-icon> HTML elements and attributes</td>
+            </tr>
+            <tr>
+               <td><ion-icon name="checkmark-circle-outline" class="tic"></ion-icon> HTML forms and input elements</td>
+            </tr>
+            <tr>
+               <td><ion-icon name="checkmark-circle-outline" class="tic"></ion-icon> HTML tables and lists</td>
+            </tr>
+            <tr>
+              <td><ion-icon name="checkmark-circle-outline" class="tic"></ion-icon> HTML multimedia elements(audio,vedio,images)</td>
+            </tr>
+            <tr>
+              <td><ion-icon name="checkmark-circle-outline" class="tic"></ion-icon> HTML accesibility and cemantic markup</td>
+            </tr>
+          </table>
+        <p></p>
+    </section>
+    <!--
+
+        <script>  
+    const changeColorButton = document.getElementById('changeColorButton');
+        
+        
+        changeColorButton.addEventListener('click', () => {
+            const bgBodyColor = getComputedStyle(document.documentElement).getPropertyValue('--bg_body');
+
+          // Change the value of the CSS variable
+          if(bgBodyColor == '#282828'){
+            document.documentElement.style.setProperty('--brand-primary', '#0768AC');
+          document.documentElement.style.setProperty('--brand-secondary', '#03C180');
+          document.documentElement.style.setProperty('--bg_default', '#FFFFFF');
+          document.documentElement.style.setProperty('--bg_body', '#F0F9FF');
+          document.documentElement.style.setProperty('--lines-color', '#DDDDDD');
+          document.documentElement.style.setProperty('--body-text', '#333333');
+          document.documentElement.style.setProperty('--heart-color', '#DC143C');
+          }
+          else{
+          document.documentElement.style.setProperty('--brand-primary', '#0768AC');
+          document.documentElement.style.setProperty('--brand-secondary', '#03C180');
+          document.documentElement.style.setProperty('--bg_default', '#1A1A1A');
+          document.documentElement.style.setProperty('--bg_body', '#282828');
+          document.documentElement.style.setProperty('--lines-color', '#000000');
+          document.documentElement.style.setProperty('--body-text', '#EDEDED');
+          document.documentElement.style.setProperty('--heart-color', '#DC143C');
+          }
+          
+        });
+        </script>
+    -->
+    
+  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
